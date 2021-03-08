@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-native-pgric",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,9 +23,16 @@
   },
   "homepage": "https://github.com/CptFabulouso/eslint-config-react-native-pgric#readme",
   "devDependencies": {
-    "eslint": "^7.21.0"
+    "eslint": "^7.21.0",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "typescript": "^4.2.3"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "eslint": "^7.21.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
