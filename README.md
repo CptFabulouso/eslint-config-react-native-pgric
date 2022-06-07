@@ -1,5 +1,7 @@
 # eslint-config-react-native-pgric
 
+ESLint and TypeScript configuration for React Native
+
 ## Install
 
 `yarn add eslint-config-react-native-pgric --dev`
@@ -13,3 +15,9 @@ in `.eslintrc`
   "extends": "react-native-pgric"
 }
 ```
+
+## Additionally to use tsconfig.json
+
+{
+  "extends": "eslint-config-react-native-pgric/tsconfig.base"
+}

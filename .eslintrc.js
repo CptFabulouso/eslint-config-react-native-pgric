@@ -63,6 +63,16 @@ module.exports = {
 				'newlines-between': 'always',
 			},
 		],
+    '@typescript-eslint/ban-types': [
+			'error',
+			{
+				types: {
+					// un-ban a type that's banned by default
+					'{}': false,
+				},
+				extendDefaults: true,
+			},
+		],
   },
   settings: {
     'import/external-module-folders': ['node_modules'],
