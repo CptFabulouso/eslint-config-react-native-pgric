@@ -9,6 +9,7 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'import', 'prettier'],
   rules: {
+    'comma-dangle': 0,
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 0,
