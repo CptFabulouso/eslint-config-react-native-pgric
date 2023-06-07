@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,14 @@
     "url": "https://github.com/CptFabulouso/eslint-config-react-native-pgric/issues"
   },
   "homepage": "https://github.com/CptFabulouso/eslint-config-react-native-pgric#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "dependencies": {
+    "@react-native-community/eslint-config": "^3.2.0",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
     "@typescript-eslint/parser": "^5.59.7",
-    "@react-native-community/eslint-config": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1"
   },
@@ -36,6 +40,7 @@
   },
   "devDependencies": {
     "eslint": "^8.19.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "release-it": "^15.11.0"
   }
 }
