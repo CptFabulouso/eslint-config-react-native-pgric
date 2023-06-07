@@ -4,7 +4,7 @@ ESLint and TypeScript configuration for React Native
 
 ## Install
 
-`yarn add eslint-config-react-native-pgric --dev`
+`yarn add @pavelgric/eslint-config-react-native --dev`
 
 ## Use
 
@@ -12,12 +12,25 @@ in `.eslintrc`
 
 ```js
 {
-  "extends": "react-native-pgric"
+  "extends": "@pavelgric/eslint-config-react-native"
 }
+```
+
+matching `.prettierrc.js`
+
+```js
+module.exports = {
+  bracketSpacing: true,
+  jsxBracketSameLine: false,
+  singleQuote: true,
+  trailingComma: 'all',
+  printWidth: 80,
+  semi: true,
+};
 ```
 
 ## Additionally to use tsconfig.json
 
 {
-  "extends": "eslint-config-react-native-pgric/tsconfig.base"
+  "extends": "@pavelgric/eslint-config-react-native/tsconfig.base"
 }
