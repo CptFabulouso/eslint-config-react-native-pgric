@@ -13,13 +13,13 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 0,
-		'no-unused-vars': 'off',
-		'@typescript-eslint/no-unused-vars': [
-			'error',
-			{
-				argsIgnorePattern: '^_',
-			},
-		],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+      },
+    ],
     'no-console': ['error', { allow: ['warn'] }],
     'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
     curly: 2,
@@ -30,15 +30,14 @@ module.exports = {
         ignoreReadBeforeAssign: false,
       },
     ],
-		'react/jsx-indent': [2, 'tab'],
-		'no-inner-declarations': 2,
+    'no-inner-declarations': 2,
     quotes: [
-			'error',
-			'single',
-			{
-				avoidEscape: true,
-			},
-		],
+      'error',
+      'single',
+      {
+        avoidEscape: true,
+      },
+    ],
     'import/no-extraneous-dependencies': 2,
     'import/no-unused-modules': 0,
     'import/prefer-default-export': 0,
@@ -51,29 +50,29 @@ module.exports = {
     'import/no-commonjs': 'error',
     'import/no-named-as-default-member': 0,
     'import/order': [
-			'error',
-			{
-				groups: [
-					['builtin', 'external'],
-					['internal', 'sibling', 'parent', 'index'],
-				],
-				alphabetize: {
-					order: 'asc',
-				},
-				pathGroupsExcludedImportTypes: [],
-				'newlines-between': 'always',
-			},
-		],
+      'error',
+      {
+        groups: [
+          ['builtin', 'external'],
+          ['internal', 'sibling', 'parent', 'index'],
+        ],
+        alphabetize: {
+          order: 'asc',
+        },
+        pathGroupsExcludedImportTypes: [],
+        'newlines-between': 'always',
+      },
+    ],
     '@typescript-eslint/ban-types': [
-			'error',
-			{
-				types: {
-					// un-ban a type that's banned by default
-					'{}': false,
-				},
-				extendDefaults: true,
-			},
-		],
+      'error',
+      {
+        types: {
+          // un-ban a type that's banned by default
+          '{}': false,
+        },
+        extendDefaults: true,
+      },
+    ],
   },
   settings: {
     'import/external-module-folders': ['node_modules'],
