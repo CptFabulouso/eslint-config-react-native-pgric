@@ -20,6 +20,7 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+    '@typescript-eslint/ban-ts-comment': 'off',
     'no-console': ['error', { allow: ['warn'] }],
     'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
     curly: 2,
