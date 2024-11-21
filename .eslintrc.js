@@ -7,7 +7,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
-  plugins: ['@typescript-eslint', 'import', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'prettier', 'jest'],
   rules: {
     'comma-dangle': 0,
     'no-shadow': 'off',
