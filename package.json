@@ -1,6 +1,6 @@
 {
   "name": "@pavelgric/eslint-config-react-native",
-  "version": "5.0.2",
+  "version": "6.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
