@@ -478,6 +478,7 @@ __metadata:
     "@typescript-eslint/parser": ^8.31.1
     eslint: ^8.47.0
     eslint-config-expo: ^9.2.0
+    eslint-config-prettier: ^10.1.2
     eslint-plugin-import: ^2.31.0
     eslint-plugin-jest: ^28.11.0
     eslint-plugin-prettier: ^5.2.6
@@ -2409,6 +2410,17 @@ __metadata:
   peerDependencies:
     eslint: ">=8.10"
   checksum: 950e46edba5cf03f541015621fa7aa267a71b2227a52dd366ea58b5f91e6b164be6798883f23d31db75bd5d240de86a3400b50eb7e14ab9bb0e623990e2fdc61
+  languageName: node
+  linkType: hard
+
+"eslint-config-prettier@npm:^10.1.2":
+  version: 10.1.2
+  resolution: "eslint-config-prettier@npm:10.1.2"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: bin/cli.js
+  checksum: 6b317378214a5935457bd9d7c3220ec37fb621e07bf31cf1ffb82bf38eca1cd89f338d18284114d504a865a6bb932faa5df29a18a72e6e43484dbc959d087620
   languageName: node
   linkType: hard
 

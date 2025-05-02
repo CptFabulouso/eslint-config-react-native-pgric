@@ -1,26 +1,11 @@
 const { defineConfig } = require('eslint/config');
 
-const tsParser = require('@typescript-eslint/parser');
-
-const { fixupConfigRules, fixupPluginRules } = require('@eslint/compat');
-
-const typescriptEslint = require('@typescript-eslint/eslint-plugin');
-const _import = require('eslint-plugin-import');
-const prettier = require('eslint-plugin-prettier');
-const jest = require('eslint-plugin-jest');
-const js = require('@eslint/js');
 const expoConfig = require('eslint-config-expo/flat');
-
-const { FlatCompat } = require('@eslint/eslintrc');
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
+const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended');
 
 module.exports = defineConfig([
   expoConfig,
+  eslintPluginPrettierRecommended,
   {
     rules: {
       'comma-dangle': 0,
