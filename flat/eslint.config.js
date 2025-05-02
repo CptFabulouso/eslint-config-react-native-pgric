@@ -3,21 +3,28 @@ const { defineConfig } = require('eslint/config');
 const expoConfig = require('eslint-config-expo/flat');
 const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended');
 
+const typescriptEslint = require('@typescript-eslint/eslint-plugin');
+
 module.exports = defineConfig([
   expoConfig,
   eslintPluginPrettierRecommended,
   {
+    plugins: {
+      '@typescript-eslint': typescriptEslint,
+    },
     rules: {
       'comma-dangle': 0,
       'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'error',
       '@typescript-eslint/explicit-module-boundary-types': 0,
+      '@typescript-eslint/no-explicit-any': 1,
       'no-unused-vars': 'off',
 
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
           argsIgnorePattern: '^_',
+          caughtErrorsIgnorePattern: '^_',
         },
       ],
 
@@ -77,17 +84,6 @@ module.exports = defineConfig([
 
           pathGroupsExcludedImportTypes: [],
           'newlines-between': 'always',
-        },
-      ],
-
-      '@typescript-eslint/ban-types': [
-        'error',
-        {
-          types: {
-            '{}': false,
-          },
-
-          extendDefaults: true,
         },
       ],
     },
