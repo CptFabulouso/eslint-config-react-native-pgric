@@ -2,10 +2,10 @@
   "javascript.validate.enable": false,
   "problems.decorations.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true 
- },
-"typescript.tsdk": "node_modules/typescript/lib",
-"cSpell.words": [
-  "pavelgric"
-],
+    "source.fixAll.eslint": "explicit"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "pavelgric"
+  ],
 }

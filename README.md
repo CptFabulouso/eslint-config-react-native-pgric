@@ -8,6 +8,22 @@ ESLint and TypeScript configuration for React Native
 
 ## Use
 
+## v >= 6
+
+in `eslint.config.js`
+
+```js
+const config = require("@pavelgric/eslint-config-react-native/flat");
+const { defineConfig } = require("eslint/config");
+
+module.exports = defineConfig([
+  config,
+  // your other config
+]);
+```
+
+## v <= 5
+
 in `.eslintrc`
 
 ```js
